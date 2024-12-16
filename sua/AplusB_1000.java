@@ -1,4 +1,4 @@
-package CodingTest;
+package CodingTest.sua;
 
 import java.io.*;
 import java.util.StringTokenizer;
