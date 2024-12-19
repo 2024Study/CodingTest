@@ -12,12 +12,12 @@ public class AdividedB_1008 {
         StringTokenizer st = new StringTokenizer(br.readLine());
 
 
-        float A = Float.parseFloat(st.nextToken());
-        float B = Float.parseFloat(st.nextToken());
+        double A = Double.parseDouble(st.nextToken());
+        double B = Double.parseDouble(st.nextToken());
 
-        float res = A/B;
+        double res = A/B;
 
-        bw.write(String.valueOf(res));
+        bw.write(String.format("%.9f",res));
 
         bw.flush();
 
