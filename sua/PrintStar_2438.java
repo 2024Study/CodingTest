@@ -2,7 +2,7 @@ package CodingTest.sua;
 
 import java.io.*;
 
-public class printStar_2438 {
+public class PrintStar_2438 {
 
     public static void main(String[] args)throws IOException {
 
