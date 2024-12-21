@@ -15,12 +15,12 @@ public class CompareTwoNumbers_1330 {
         int A = Integer.parseInt(st.nextToken());
         int B = Integer.parseInt(st.nextToken());
 
+        //삼항 연산자
         bw.write((A>B)?">":(A<B)?"<":"==");
 
         bw.flush();
 
         bw.close();
-
 
     }
 
