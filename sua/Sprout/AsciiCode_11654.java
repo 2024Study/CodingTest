@@ -1,4 +1,4 @@
-package CodingTest.sua;
+package CodingTest.sua.Sprout;
 
 import java.io.*;
 

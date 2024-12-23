@@ -1,12 +1,13 @@
-package CodingTest.sua;
+package CodingTest.sua.Sprout;
 
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class AminusB_1001 {
+public class CompareTwoNumbers_1330 {
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -14,14 +15,12 @@ public class AminusB_1001 {
         int A = Integer.parseInt(st.nextToken());
         int B = Integer.parseInt(st.nextToken());
 
-        int res = A-B;
-
-        bw.write(String.valueOf(res));
+        //삼항 연산자
+        bw.write((A>B)?">":(A<B)?"<":"==");
 
         bw.flush();
 
         bw.close();
-
 
     }
 

@@ -1,9 +1,9 @@
-package CodingTest.sua;
+package CodingTest.sua.Sprout;
 
 import java.io.*;
 import java.util.StringTokenizer;
 
-public class CompareTwoNumbers_1330 {
+public class AplusB_1000 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -11,12 +11,11 @@ public class CompareTwoNumbers_1330 {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
-
         int A = Integer.parseInt(st.nextToken());
         int B = Integer.parseInt(st.nextToken());
+        int sum = A+B;
 
-        //삼항 연산자
-        bw.write((A>B)?">":(A<B)?"<":"==");
+        bw.write(String.valueOf(sum)); // bw는 integer를 못쓰기 때문에 String을 변환해서 값 출력
 
         bw.flush();
 
