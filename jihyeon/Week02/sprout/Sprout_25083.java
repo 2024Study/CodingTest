@@ -1,4 +1,4 @@
-package CodingTest.jihyeon.Week02;
+package CodingTest.jihyeon.Week02.sprout;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

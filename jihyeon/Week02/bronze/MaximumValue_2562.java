@@ -1,4 +1,4 @@
-package CodingTest.jihyeon.Week02;
+package CodingTest.jihyeon.Week02.bronze;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
