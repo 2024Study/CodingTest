@@ -1,3 +1,5 @@
+package CodingTest.sua.Bronze;
+
 import java.io.*;
 import java.util.*;
 
