@@ -21,16 +21,22 @@ public class Snail_2869 {
         bw.close();
 
 
-
-
-
     }
 
     private static int days(int A, int B, int V){
 
-        //A 미터 + (-B 미터)/V = res
+        // (V - B) / (A - B) 최소 일 수
+        //만약 나누어떨어지지않는다면 1일 더하기
+        /*하루에 실제로 올라가는 거리: (A - B)
+        마지막 날은 A만큼만 올라가면 됨
+        실제 올락아ㅑ하는 순서거리 : (V - B)
+        나머지가 있으면 하루 추가*/
 
-        int res = (A-B)/V;
+        int res = (V - B) / (A - B);
+
+        if ((V - B) % (A - B) != 0) {
+            res++;
+        }
 
 
         return res;
