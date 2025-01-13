@@ -14,15 +14,16 @@ public class NumberSorting3_10989 {
 
         int count = Integer.parseInt(br.readLine());
 
-        int[] numbers = new int[count];
+        int[] frequency  = new int[10001];
 
         for (int i = 0; i < count; i++) {
-            numbers[i] = Integer.parseInt(br.readLine());
+            frequency[Integer.parseInt(br.readLine())]++;
         }
-        Arrays.sort(numbers);
 
-        for (int i = 0; i < count; i++) {
-            bw.write(numbers[i] + "\n");
+        for (int i = 1; i <= 10000; i++) {
+            while (frequency[i]-- > 0) {
+                bw.write(i + "\n");
+            }
         }
 
         bw.flush();
