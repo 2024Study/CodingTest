@@ -5,21 +5,31 @@ import java.io.*;
 public class FizzBuzz_28702 {
 
     public static void main(String[] args) throws IOException {
-
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        String input = br.readLine();
-        //문자열을 입력받기
+        int N = Integer.parseInt(br.readLine());
 
+        int num = findNum(N);
+
+        bw.write(String.valueOf(num));
+        bw.flush();
+        bw.close();
+        br.close();
     }
 
+    private static int findNum(int N) {
+        if (N == 1) return 1;
 
-    private static String findFizzBuzz(String input){
-        //각각 Fizz, Buzz에 대한 정의하기
-        //Fizz와 Buzz에 해당하는 값이 아닌 경우의 값으로 유추하기
+        int count = 1;
+        int range = 1;
 
+        while (range < N) {
+            range += 6 * count;
+            count++;
+        }
 
+        return count;
     }
 
 
