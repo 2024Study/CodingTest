@@ -10,8 +10,11 @@ public class President_2775 {
 
         int T = Integer.parseInt(br.readLine());
 
+        //층수
         int k = Integer.parseInt(br.readLine());
 
+
+        //n호
         int n = Integer.parseInt(br.readLine());
 
         int peoeple = calPeople(T, k,n);
@@ -23,6 +26,8 @@ public class President_2775 {
     }
 
     private static int calPeople(int T, int k, int n){
+        //(a-1) + 1 ~ b
+
         return 0;
     }
 
