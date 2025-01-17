@@ -23,6 +23,11 @@ public class President_2775 {
     }
 
     private static int calPeople(int T, int k, int n){
+
+        for(int i =1; i<=T; i++){
+
+        }
+
         return 0;
     }
 
