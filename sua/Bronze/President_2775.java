@@ -24,10 +24,12 @@ public class President_2775 {
 
     private static int calPeople(int T, int k, int n){
 
-        for(int i =1; i<=T; i++){
-
-        }
-
+        /*
+        2층의 3호
+= 1층의 1호 + 1층의 2호 + 1층의 3호
+= (0층의 1호) + (0층의 1호+0층의 2호) + (0층의 1호+0층의 2호+3호)
+= 1 + (1+2)+ (1+2+3)
+=10*/
         return 0;
     }
 
