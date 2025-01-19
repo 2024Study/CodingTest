@@ -2,25 +2,33 @@ package CodingTest.sua.Bronze;
 
 import java.io.*;
 
+
 public class FizzBuzz_28702 {
-
     public static void main(String[] args) throws IOException {
-
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        String input = br.readLine();
-        //문자열을 입력받기
-
+        for(int i = 3; i > 0; i--){
+            String s = br.readLine();
+            if(s.matches("-?\\d+(\\.\\d+)?")){
+                int n = Integer.parseInt(s) + i;
+                if(n % 3 == 0){
+                    if (n % 5 == 0) {
+                        bw.write("FizzBuzz");
+                    }else {
+                        bw.write("Fizz");
+                    }
+                } else if (n % 5 == 0) {
+                    bw.write("Buzz");
+                }else {
+                    bw.write(String.valueOf(n));
+                }
+                bw.newLine();
+                bw.flush();
+                return;
+            }
+        }
+        br.close();
+        bw.close();
     }
-
-
-    private static String findFizzBuzz(String input){
-        //각각 Fizz, Buzz에 대한 정의하기
-        //Fizz와 Buzz에 해당하는 값이 아닌 경우의 값으로 유추하기
-
-
-    }
-
-
 }
