@@ -23,7 +23,7 @@ public class SortingAge_10814 {
             String[] input = br.readLine().split(" ");
             int age = Integer.parseInt(input[0]);
             String name = input[1];
-            members.add(new Member(age, name, i)); // 입력 순서를 저장
+            members.add(new Member(age, name, i));
         }
 
         members.sort(Comparator.comparingInt(Member::getAge).thenComparingInt(Member::getIndex));
@@ -38,7 +38,6 @@ public class SortingAge_10814 {
     }
 }
 
-// 멤버 클래스 정의
 class Member {
     private final int age;
     private final String name;
