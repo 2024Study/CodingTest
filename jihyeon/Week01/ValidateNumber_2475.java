@@ -1,4 +1,4 @@
-package CodingTest.jihyeon;
+package CodingTest.jihyeon.Week01;
 
 import java.io.BufferedReader;
 import java.io.IOException;
