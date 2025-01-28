@@ -42,7 +42,14 @@ public class Honeycomb_2292 {
     private static int findNum(int N) {
 
         if (N == 1) return 1;
+        int count = 1;
+        int range = 1;
 
+        while (range < N) {
+            range += 6 * count;
+            count++;
+        }
 
+        return count;
     }
 }
