@@ -18,11 +18,26 @@ public class SortingWords_1181 {
 
         HashSet<String> set = new HashSet<>();
 
-        // 입력 받기 및 중복 제거
         for (int i = 0; i < N; i++) {
             set.add(br.readLine());
         }
 
         List<String> list = new ArrayList<>(set);
+        list.sort((s1, s2) -> {
+            if (s1.length() == s2.length()) {
+                return s1.compareTo(s2);
+            }
+            return s1.length() - s2.length();
+        });
+
+        for (String word : list) {
+            bw.write(word);
+            bw.newLine();
+        }
+
+        bw.flush();
+        bw.close();
+        br.close();
     }
+
 }
